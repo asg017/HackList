@@ -1,0 +1,20 @@
+{
+  "name": "hacklist",
+  "version": "0.0.0",
+  "description": "Place to find, share, and learn different API's and tools for side projects and hackathons.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"need to make tests\"",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "",
+  "license": "MIT"
+}
