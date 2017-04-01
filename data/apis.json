@@ -1,0 +1,27 @@
+[
+
+  {
+    "id" : "abcdefgklke",
+    "posterUserId" : 352,
+    "timeSubmit" : 129582323,
+    "submitTitle" : "Google Calendar API",
+    "CompanyOriginId" : 343,
+    "quickDescription" : "Add, modify, and suggest events for a user's calendar.",
+    "longDescription" : "Wooo no rules yo.",
+    "documentationLink" : "https://developer.google.com/calendar",
+    "tags" : ["calendar","google", "events", "schedule"],
+    "logo" : "Lol no idea"
+  },
+  {
+    "id" : "bkjcodejfkj",
+    "posterUserId" : 352,
+    "timeSubmit" : 129586679,
+    "submitTitle" : "OpenFEC API",
+    "CompanyOriginId" : 100,
+    "quickDescription" : "Explore US Candidates, commitees, and political parties, and how they are funded.",
+    "longDescription" : "Wooo no rules yo.",
+    "documentationLink" : "https://www.fec.gov/api",
+    "tags" : ["government","politics", "finance", "money"],
+    "logo" : "Lol no idea"
+  }
+]
