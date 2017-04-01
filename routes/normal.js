@@ -1,5 +1,6 @@
 var express = require('express');
 var routerNormal = express.Router();
+var data = require('../data/apis.json');
 
 /*Front Page Route*/
 routerNormal.route('/')
@@ -8,7 +9,7 @@ routerNormal.route('/')
   next();
 })
 .get(function(req, res, next) {
-  res.send("Frontpage yo");
+  res.render("front", {username:"blarghah", posts: data});
 });
 
 

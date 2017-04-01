@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <%- include('partials/head') %>
+  <link href="/css/front.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <%- include('partials/navbar', {"active":"front"}) %>
+
+
+  <h1>Hello</h1>
+
+  <h2><%= username %></h2>
+
+  <div id="api-posts" style="width:100%; float:right; right:0px;">
+  	<div class="row" >
+
+        <% posts.forEach(function(post) { %>
+              <%- include('partials/api-carousel', {apiCaro:post}) %>
+        <% }); %>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

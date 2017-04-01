@@ -2,6 +2,10 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'ejs');
+app.use(express.static('static'));
+
+
 app.use('/', require('./routes/normal.js'));
 app.use('/api', require('./routes/api.js'));
 

@@ -1,0 +1,36 @@
+/*SIDE NOTE: Made this a while ago, not entirely sure what it all does.*/
+
+body {
+	background-color: gray;
+}
+
+.api_post {
+	margin-top: 10px;
+	background-color: rgba(255,255,255,.8);
+	border-radius:10px;
+	border: 1px solid black;
+	padding: 10px;
+	height: 185px;
+	min-width: 350px;
+}
+
+.api_post:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.api_post_pic {
+	border-radius: 15px;
+}
+
+.interact-main {
+	border: 2px solid white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+
+.interact-icon{
+	float: left;
+	width: 50%;
+	text-align: center;
+}

@@ -1,0 +1,64 @@
+<div class="col-md-4 col-sm-6 col-xs-12 thumb" >
+
+  <div class="api_post" >
+
+    <div class="media">
+
+      <div class="media-left">
+        <img src= <%=apiCaro.logo%>  height="125px" width="125px" class="block-center api_post_pic"/>
+      </div>
+
+      <div class="media-body">
+
+        <h4 class="media-heading"><a href=<%="./apis/" +  apiCaro.id %> > <%= apiCaro.submitTitle %></a></h4>
+        <small>
+          By <a href="./org/123.html"> <%= apiCaro.CompanyOrignId %></a><br>
+          <small> submitted by <a href="./users/123.html">moooo</a></small>
+        </small>
+
+        <p><%= apiCaro.quickDescr %></p>
+
+      </div > <!--media-body -->
+
+      <div class="media-bottom" style="padding:3px; position: absolute; bottom: 0; width: 300px;">
+        <div class="row">
+          <div class="col-xs-3" >
+            <div class="interact-main">
+              <div class="interact-icon left">
+                <span class="glyphicon glyphicon-heart rate"></span>
+              </div>
+              <div class="interact-icon right">
+                <small><%= apiCaro.numLikes %></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3">
+            <div class="interact-main">
+              <div class="interact-icon left">
+                <span class="glyphicon glyphicon-comment rate"></span>
+              </div>
+              <div class="interact-icon right">
+                <small><%= apiCaro.numComments %></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3">
+            <div class="interact-main">
+              <div class="interact-icon left">
+                <span class="glyphicon glyphicon-globe rate"></span>
+              </div>
+              <div class="interact-icon right">
+                <small><%= apiCaro.numProjs %></small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!--media bottom part -->
+  </div> <!--media-->
+
+</div> <!--api_post-->

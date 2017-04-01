@@ -10,7 +10,7 @@
     "longDescription" : "Wooo no rules yo.",
     "documentationLink" : "https://developer.google.com/calendar",
     "tags" : ["calendar","google", "events", "schedule"],
-    "logo" : "Lol no idea"
+    "logo" : "https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw=w300"
   },
   {
     "id" : "bkjcodejfkj",
@@ -22,6 +22,6 @@
     "longDescription" : "Wooo no rules yo.",
     "documentationLink" : "https://www.fec.gov/api",
     "tags" : ["government","politics", "finance", "money"],
-    "logo" : "Lol no idea"
+    "logo" : "http://www.opensecrets.org/news/wp-content/uploads/2014/07/FEC-Logo-thumb-240x240-6989.png"
   }
 ]
