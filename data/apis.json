@@ -7,7 +7,7 @@
     "submitTitle" : "Google Calendar API",
     "CompanyOriginId" : 343,
     "quickDescription" : "Add, modify, and suggest events for a user's calendar.",
-    "longDescription" : "Wooo no rules yo.",
+    "longDescription" : "The Calendar API lets you integrate your app with Google Calendar, creating new ways for you to engage your users.",
     "documentationLink" : "https://developer.google.com/calendar",
     "tags" : ["calendar","google", "events", "schedule"],
     "logo" : "https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw=w300"
