@@ -9,6 +9,6 @@ app.use(express.static('static'));
 app.use('/', require('./routes/normal.js'));
 app.use('/api', require('./routes/api.js'));
 
-app.listen(8080 || process.env.PORT, function () {
-  console.log('Server listening success on ' + (8080 || process.env.PORT));
+app.listen( process.env.PORT || 8080, function () {
+  console.log('Server listening success on ' + (process.env.PORT || 8080));
 });
