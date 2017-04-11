@@ -2,27 +2,39 @@
 
 <head>
   <%- include('partials/head') %>
+  <title>HackList</title>
   <link href="/css/front.css" type="text/css" rel="stylesheet">
+  <link href="/css/dragula.min.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <script src="/js/front.js"></script>
 </head>
 
 <body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 
 <div class="container">
 
+  <%- include('modals/test') %>
   <%- include('partials/navbar', {"active":"front"}) %>
 
+  <%- include('partials/menu', {"active": "hot"}) %>
 
-  <h1>Hello</h1>
+  <button type="button" class="btn btn-info btn-lg" onclick="exam()">Open Modal</button>
 
-  <h2><%= username %></h2>
+  <div class="row">
+    <div class="col-xs-9">
+      <div class ="row" id="api_post_container">
 
-  <div id="api-posts" style="width:100%; float:right; right:0px;">
-  	<div class="row" >
+            <% posts.forEach(function(post) { %>
+                  <%- include('partials/api-carousel', {apiCaro:post}) %>
+            <% }); %>
+      </div>
+    </div>
 
-        <% posts.forEach(function(post) { %>
-              <%- include('partials/api-carousel', {apiCaro:post}) %>
-        <% }); %>
-
+    <div class="col-xs-3">
+      <div id="carts-container">
+        <%- include('partials/cart', {userCarts:userCarts}) %>
+      </div>
     </div>
   </div>
 
