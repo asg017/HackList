@@ -26,13 +26,13 @@ routerNormal.route(['/user/:id', '/u/:id'])
 });
 
 /*API Pages Route*/
-routerNormal.route('/api/:id/*')
+routerNormal.route('/a/:id/*')
 .all(function(req, res, next) {
-  console.log("Inside /api/:id");
+  console.log("Inside /a/:id");
   next();
 })
 .get(function(req, res, next) {
-  console.log('mooo, inside api/:id');
+  console.log('mooo, inside a/:id');
   res.send("API INFO HERE FOR "+req.params.id);
 });
 

@@ -5,8 +5,9 @@
   <title>HackList</title>
   <link href="/css/front.css" type="text/css" rel="stylesheet">
   <link href="/css/dragula.min.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Work+Sans" rel="stylesheet">
   <script src="/js/front.js"></script>
+  <script src="/js/ejs.min.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,12 @@
 
 <div class="container">
 
-  <%- include('modals/test') %>
+  <div class="modal fade" id="myModal" role="dialog">
+    <%- include('modals/test', {api: {}}) %>
+  </div>
   <%- include('partials/navbar', {"active":"front"}) %>
 
   <%- include('partials/menu', {"active": "hot"}) %>
-
-  <button type="button" class="btn btn-info btn-lg" onclick="exam()">Open Modal</button>
 
   <div class="row">
     <div class="col-xs-9">

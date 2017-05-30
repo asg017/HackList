@@ -21,7 +21,18 @@ routerApi.route('/apis/:id')
 })
 .get(function(req, res, next) {
   console.log("mooo, inside api/apis get");
-  res.json(data[req.params.id]);
+  res.json(data.filter(function(elem) {
+    return elem.postId == req.params.id;
+  })[0] );
+});
+
+routerApi.use(express.static(__dirname + '/views'));
+routerApi.route('/templates/modal')
+.get(function(req, res) {
+  res.render('modals/test.ejs', {delimiter:'#'});
+  /*res.sendFile('modals/test.ejs',
+    {'root': __dirname + '/../views/', 'headers': {'Content-Type':'application/txt'}}
+  );*/
 });
 
 module.exports = routerApi;

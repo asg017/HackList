@@ -32,9 +32,8 @@ BEGINING API POST
 .api_post p {
 	font-family: 'Lora', serif;
 	font-size: 12px;
+	cursor: default;
 }
-
-
 
 .api_post_pic {
 	border-radius: 15px;
@@ -46,6 +45,7 @@ BEGINING API POST
 	border: 2px solid gray;
 	border-radius: 5px;
 	overflow: hidden;
+	font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -56,10 +56,8 @@ BEGINING API POST
 	cursor: pointer;
 }
 
-.interact-main:hover {
-	color: white;
-	border-color: red;
-	background-color: red;
+.interact-icon:hover {
+	color: red;
 }
 
 /*==============================================================================
@@ -90,14 +88,14 @@ BEGIN API CART
 }
 #carts-logistics #carts-settings {
 	display: inline;
-	border: 1px solid white;
-	border-radius: 3px;
 	text-align: center;
+
+	font-size: 20px;
 }
 #carts-logistics #carts-min {
 	display: inline;
-	border: 1px solid white;
-	border-radius: 3px;
+
+	font-size: 20px;
 }
 /*Needed to disallow other divs afterwards to appear on same line*/
 #carts-logistics::after {
@@ -127,4 +125,21 @@ BEGIN API CART
 #menu li {
 	border: 1px solid blue;
 	border-radius: 5px;
+}
+
+/*==============================================================================
+BEGIN PROJECT CAROUSEL
+==============================================================================*/
+
+#proj-carousel-container {
+	width: 100%;
+	height: 200px;
+	background-color: yellow;
+}
+
+.proj-carousel {
+	display: inline-block;
+	background-color: purple;
+	width: 75px;
+	height: 75px;
 }

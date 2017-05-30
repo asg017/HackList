@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-6 col-xs-12 thumb api_post" >
+<div  data-post-id="<%= apiCaro.postId%>" class="col-lg-4 col-md-6 col-xs-12 thumb api_post" >
 
 
     <div class="media">
@@ -9,7 +9,7 @@
 
       <div class="media-body">
 
-        <h4 class="media-heading"><a href=<%="./apis/" +  apiCaro.postId %> > <%= apiCaro.submitTitle %></a></h4>
+        <h4 class="media-heading"><a href=<%="./apis/" +  apiCaro.postId %> class="api_title"> <%= apiCaro.submitTitle %></a></h4>
         <small>
           By <a href="./org/123.html"> <%= apiCaro.companyOrig %></a><br>
           <small> submitted by <a href="./users/123.html">moooo</a></small>
